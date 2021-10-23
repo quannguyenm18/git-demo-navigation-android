@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/edt_nameKT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="Nhập Tên khoản Thu" />
+
+        <EditText
+            android:id="@+id/edt_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="Nhập Tên Số Tiền"
+            android:inputType="number" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_nhapKT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/button_them_thu_nhap"
+            android:text="Thêm Thu Nhập"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/search_KhoanThu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/bg_search"
+            android:hint="Tìm Kiếm "
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:padding="8dp"
+            android:paddingLeft="8dp" />
+
+        <TextView
+            android:id="@+id/tv_deleteALL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="8dp"
+            android:text="Delete ALLL"
+            android:textColor="#FF0000"
+            android:textStyle="bold|italic" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_KhoanThu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+</ScrollView>
